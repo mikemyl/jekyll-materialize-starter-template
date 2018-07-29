@@ -1,13 +1,22 @@
 - title: "Αρχική"
   href: "/"
 
-- title: "Misc"
+- title: "Υπηρεσίες"
   subcategories:
   - subtitle: "Example"
-    subhref: "#"
+    subhref: "/Buttoms/"
   - subtitle: "Example2"
     subhref: "#"
 
-- title: "Blog"
-  href: "/blog/"
+- title: "Συλλογή φωτογραφιών"
+  href: "/"
+
+- title: "Ενδιαφέροντα Άρθρα"
+  href: "/"
+
+- title: "Περί ημών"
+  href: "/"
+
+- title: "Επικοινωνία"
+  href: "/"
 
