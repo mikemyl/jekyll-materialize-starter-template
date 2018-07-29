@@ -3,3 +3,8 @@
 ---
 
 @import "materialize/materialize";
+
+.slider .indicators .active {
+  @extend .blue, .darken-4;
+}
+
