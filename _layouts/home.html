@@ -2,23 +2,41 @@
 layout: default
 ---
 
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">{{ site.title }}</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">{{ content }}</h5>
+<div class="slider">
+  <ul class="slides">
+    <li>
+      <img src="https://picsum.photos/1970/400/?random"> <!-- random image -->
+      <div class="caption center-align">
+        <h3>This is our big Tagline!</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
       </div>
-        
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+    </li>
+    <li>
+      <img src="https://picsum.photos/1970/400/?random"> <!-- random image -->
+      <div class="caption left-align">
+        <h3>Left Aligned Caption</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
       </div>
-      <br><br>
+    </li>
+    <li>
+      <img src="https://picsum.photos/1970/400/?random"> <!-- random image -->
+      <div class="caption right-align">
+        <h3>Right Aligned Caption</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      </div>
+    </li>
+    <li>
+      <img src="https://picsum.photos/1970/400/?random"> <!-- random image -->
+      <div class="caption center-align">
+        <h3>This is our big Tagline!</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      </div>
+    </li>
+  </ul>
+</div>
 
-    </div>
-  </div>
 
-  <div class="container">
+<div class="container">
     <div class="section">
 
       <!--   Icon Section   -->
@@ -61,7 +79,7 @@ layout: default
     <div style="background: #ddd">
     <div class="container last-post">
     <section>
-        <h5>Latest Post</h5>
+        <h5>Ενδιαφέροντα θέματα</h5>
         <ul class="collection">
         {% for post in site.posts %}
         <li class="collection-item avatar">

@@ -1,4 +1,7 @@
-// Navigation Menu DropDown
+/******************************
+ **** Dropdown Navigation *****
+ ******************************/
+
 
 options= {hover: true, coverTrigger: false}
 
@@ -14,4 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems, mobilePptions);
+});
+
+
+/*****************************
+********** Slider ************
+******************************/
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.slider');
+  var instances = M.Slider.init(elems, options);
 });
