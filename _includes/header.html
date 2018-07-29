@@ -5,7 +5,7 @@
             {% for nav in site.data.nav %}
               {% if nav.subcategories != null %}
                 <li>
-                  <a class='dropdown-trigger' href='#' data-target='dropdown-nav'>{{ nav.title }}</a>
+                  <a class='dropdown-trigger' href='#' data-target='dropdown-nav'>{{ nav.title }}<i class="material-icons right">arrow_drop_down</i></a>
                   <ul id='dropdown-nav' class='dropdown-content'>
                     {% for subcategory in nav.subcategories %}
                       <li>
@@ -28,7 +28,7 @@
             {% for nav in site.data.nav %}
               {% if nav.subcategories != null %}
                 <li>
-                  <a class='dropdown-trigger' href='#' data-target='dropdown-nav-mobile'>{{ nav.title }}</a>
+                  <a class='dropdown-trigger' href='#' data-target='dropdown-nav-mobile'>{{ nav.title }}<i class="material-icons right">arrow_drop_down</i></a>
                   <ul id='dropdown-nav-mobile' class='dropdown-content'>
                     {% for subcategory in nav.subcategories %}
                     <li>
