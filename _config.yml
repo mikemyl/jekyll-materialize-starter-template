@@ -9,3 +9,10 @@ github_username:  macrod68
 
 sass:
     style: compressed
+
+
+defaults:
+- scope:
+    path: "assets/img"
+  values:
+    image: true
