@@ -1,0 +1,13 @@
+- title: "Αρχική"
+  href: "/"
+
+- title: "Misc"
+  subcategories:
+  - subtitle: "Example"
+    subhref: "#"
+  - subtitle: "Example2"
+    subhref: "#"
+
+- title: "Blog"
+  href: "/blog/"
+
