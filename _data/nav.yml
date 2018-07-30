@@ -1,22 +1,22 @@
 - title: "Αρχική"
-  href: "/"
+  href: "index.md"
 
 - title: "Υπηρεσίες"
   subcategories:
   - subtitle: "Example"
-    subhref: "/Buttoms/"
+    subhref: "Buttoms/"
   - subtitle: "Example2"
     subhref: "#"
 
 - title: "Συλλογή φωτογραφιών"
-  href: "/"
+  href: "#"
 
 - title: "Ενδιαφέροντα Άρθρα"
-  href: "/"
+  href: "#"
 
 - title: "Περί ημών"
-  href: "/peri_imon/"
+  href: "peri_imon/"
 
 - title: "Επικοινωνία"
-  href: "/"
+  href: "#"
 
