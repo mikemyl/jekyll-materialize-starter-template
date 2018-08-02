@@ -40,3 +40,15 @@ ul:not(.browser-default) > li.in-text-li {
 #nav-wrapper {
   box-sizing: inherit;
 }
+
+@media screen and (min-width: 1818px) {
+  #nav-bar-extended {
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 1273px) {
+  #nav-bar-extended {
+    height: auto;
+  }
+}
