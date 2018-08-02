@@ -1,14 +1,30 @@
-- title: "Αρχική"
-  href: "/"
-
 - title: "Υπηρεσίες"
   subcategories:
-  - subtitle: "Example"
-    subhref: "Buttoms/"
-  - subtitle: "Example2"
+  - subtitle: "Μελέτες Εφαρμογής"
+    subhref: "#"
+  - subtitle: "Ανακαινίσεις - προσθήκες"
+    subhref: "#"
+  - subtitle: "Εκτιμήσεις ακινήτων"
     subhref: "#"
 
-- title: "Συλλογή φωτογραφιών"
+- title: "Παραγωγικές Διαδικασίες"
+  subcategories:
+  - subtitle: "Βιωσιμότητα - Αειφορία"
+    subhref: "#"
+  - subtitle: "Βιοκλιματικός σχεδιασμός"
+    subhref: "#"
+  - subtitle: "Κτίρια μηδενικού ισοζυγίου"
+    subhref: "#"
+  - subtitle: "Προσβασιμότητα"
+    subhref: "#"
+  - subtitle: "Πυροπροστασία"
+    subhref: "#"
+  - subtitle: "Πρόγραμμα ποιότητας έργου"
+    subhref: "#"
+  - subtitle: "Τεχικά πρότυπα"
+    subhref: "#"
+
+- title: "Συλλογή"
   href: "#"
 
 - title: "Ενδιαφέροντα Άρθρα"

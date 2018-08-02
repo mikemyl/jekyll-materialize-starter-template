@@ -1,12 +1,14 @@
-<nav class="blue darken-4" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">Domecon</a>
+<nav class="nav-extended blue darken-4" role="navigation">
+    <div class="nav-wrapper container" id="nav-wrapper">
+        <a class="brand-logo" class="icon hide-on-med-and-down" href="{{ "/" | relative_url }}">
+        </a>
+        <img class="icon hide-on-med-and-down" src="{{ "assets/img/logo-inverted.png" | absolute_url }}">
           <ul class="right hide-on-med-and-down">
             {% for nav in site.data.nav %}
               {% if nav.subcategories != null %}
                 <li>
-                  <a class='dropdown-trigger' href='#' data-target='dropdown-nav'>{{ nav.title }}<i class="material-icons right">arrow_drop_down</i></a>
-                  <ul id='dropdown-nav' class='dropdown-content'>
+                  <a class='dropdown-trigger' href='#' data-target='dropdown-nav-{{ forloop.index }}'>{{ nav.title }}<i class="material-icons right">arrow_drop_down</i></a>
+                  <ul id='dropdown-nav-{{ forloop.index }}' class='dropdown-content'>
                     {% for subcategory in nav.subcategories %}
                       <li>
                         <a href="{{ subcategory.subhref | absolute_url}}">{{ subcategory.subtitle }}</a>
@@ -28,8 +30,8 @@
             {% for nav in site.data.nav %}
               {% if nav.subcategories != null %}
                 <li>
-                  <a class='dropdown-trigger' href='#' data-target='dropdown-nav-mobile'>{{ nav.title }}<i class="material-icons right">arrow_drop_down</i></a>
-                  <ul id='dropdown-nav-mobile' class='dropdown-content'>
+                  <a class='dropdown-trigger' href='#' data-target='dropdown-nav-mobile-{{ forloop.index }}'>{{ nav.title }}<i class="material-icons right">arrow_drop_down</i></a>
+                  <ul id='dropdown-nav-mobile-{{ forloop.index }}' class='dropdown-content'>
                     {% for subcategory in nav.subcategories %}
                     <li>
                       <a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a>

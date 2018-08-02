@@ -33,3 +33,10 @@ ul:not(.browser-default) > li.in-text-li {
 .no-margin-bottom {
   margin-bottom: 0;
 }
+
+#logo-container {
+  box-sizing: inherit;
+}
+#nav-wrapper {
+  box-sizing: inherit;
+}
