@@ -1,9 +1,10 @@
 <nav id="nav-bar-extended" class="nav-extended blue darken-4" role="navigation">
     <div class="nav-wrapper container" id="nav-wrapper">
-        <a class="brand-logo" class="icon hide-on-med-and-down" href="{{ "/" | relative_url }}">
+        <a id="logo-anchor" class="hide-on-med-and-down" href="{{ "/" | relative_url }}">
+        <img id="logo-img" class="icon hide-on-med-and-down" src="{{ "assets/img/logo-inverted.png" | absolute_url }}">
         </a>
-        <img class="icon hide-on-med-and-down" src="{{ "assets/img/logo-inverted.png" | absolute_url }}">
-          <ul class="right hide-on-med-and-down">
+
+      <ul class="right hide-on-med-and-down">
             {% for nav in site.data.nav %}
               {% if nav.subcategories != null %}
                 <li>

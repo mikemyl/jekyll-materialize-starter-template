@@ -34,11 +34,8 @@ ul:not(.browser-default) > li.in-text-li {
   margin-bottom: 0;
 }
 
-#logo-container {
-  box-sizing: inherit;
-}
-#nav-wrapper {
-  box-sizing: inherit;
+#logo-anchor {
+  display:inline-block;
 }
 
 @media screen and (min-width: 1818px) {
