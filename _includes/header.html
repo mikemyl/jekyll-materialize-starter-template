@@ -1,9 +1,18 @@
-<nav id="nav-bar-extended" class="nav-extended blue darken-4" role="navigation">
+<div class="language-selector">
+  <div class="container row">
+    <a class="nav-anchor" href="{{ "/" | relative_url }}">
+      <img class="lang-icon" src="{{ "assets/img/en.png" | absolute_url }}">
+    </a>
+    <a class="nav-anchor" href="{{ "/" | relative_url }}">
+      <img class="lang-icon" src="{{ "assets/img/gr.png" | absolute_url }}">
+    </a>
+  </div>
+</div>
+<nav id="nav-bar-extended" class="nav-extended white" role="navigation">
     <div class="nav-wrapper container" id="nav-wrapper">
-        <a id="logo-anchor" class="hide-on-med-and-down" href="{{ "/" | relative_url }}">
-        <img id="logo-img" class="icon hide-on-med-and-down" src="{{ "assets/img/logo-inverted.png" | absolute_url }}">
+        <a class="nav-anchor hide-on-med-and-down" href="{{ "/" | relative_url }}">
+          <img id="logo-img" class="icon hide-on-med-and-down" src="{{ "assets/img/logo.png" | absolute_url }}">
         </a>
-
       <ul class="right hide-on-med-and-down">
             {% for nav in site.data.nav %}
               {% if nav.subcategories != null %}
