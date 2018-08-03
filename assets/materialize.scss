@@ -52,17 +52,21 @@ a {
   @extend .black-text;
 }
 
-body, footer {
+body {
   @extend .white, .darken-4, .black-text;
   //@extend .blue, .darken-4, .white-text
+}
+
+#footer {
+  @extend .grey, .darken-4;
+  a {
+    @extend .cyan-text, .text-accent-1;
+  };
 }
 
 .footer-copyright {
   @extend .blue, .darken-4;
   @extend .white-text;
-  a {
-    @extend .pink-text , .text-lighten-2;
-  };
 }
 
 .language-selector {
