@@ -10,7 +10,6 @@
 
 .in-text-img {
   margin: 1.52rem 0 .912rem 0;
-  object-fit: contain;
 }
 
 ul:not(.browser-default) > li.in-text-li {
@@ -72,4 +71,8 @@ body {
 .language-selector {
   @extend .left-align, .blue, .darken-4, .right-align;
   height: 40px;
+}
+
+.inline-img {
+  display:inline;
 }
