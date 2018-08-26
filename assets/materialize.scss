@@ -31,11 +31,11 @@ ul:not(.browser-default) > li.in-text-li {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 1818px) {
-  #nav-bar-extended {
-    height: 64px;
-  }
-}
+//@media screen and (min-width: 1818px) {
+//  #nav-bar-extended {
+//    height: 64px;
+//  }
+//}
 
 @media screen and (max-width: 1273px) {
   #nav-bar-extended {
@@ -90,4 +90,12 @@ body {
 .first-image {
   max-height: 450px;
   width: auto;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.no-bold {
+  font-weight: unset;
 }
