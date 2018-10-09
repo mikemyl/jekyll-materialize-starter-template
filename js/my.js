@@ -23,10 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
 /*****************************
 ********** Slider ************
 ******************************/
+slider_options = {height:600}
 
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.slider');
-  var instances = M.Slider.init(elems, options);
+  var instances = M.Slider.init(elems, slider_options);
 });
 
 
