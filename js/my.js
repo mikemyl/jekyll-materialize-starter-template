@@ -5,18 +5,26 @@
 
 options= {hover: true, coverTrigger: false}
 
-mobilePptions = {}
 
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.dropdown-trigger');
   var instances = M.Dropdown.init(elems, options);
 });
 
+
+mobileOptions= {hover: false, coverTrigger: false}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.dropdown-trigger-mobile');
+  var instances = M.Dropdown.init(elems, mobileOptions);
+});
 // var instance = M.Dropdown.getInstance(elem);
+
 
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems, mobilePptions);
+  var instances = M.Sidenav.init(elems);
 });
 
 

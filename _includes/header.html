@@ -14,24 +14,29 @@
           <img id="logo-img" class="icon hide-on-med-and-down" src="{{ "assets/img/logo.png" | absolute_url }}">
         </a>
       <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="{{ | absolute_url}}">{{ nav.title }}</a>
+            </li>
             {% for nav in site.data.nav %}
-              {% if nav.subcategories != null %}
-                <li>
-                  <a class='dropdown-trigger' href='#' data-target='dropdown-nav-{{ forloop.index }}'>{{ nav.title }}<i class="material-icons right">arrow_drop_down</i></a>
-                  <ul id='dropdown-nav-{{ forloop.index }}' class='dropdown-content'>
-                    {% for subcategory in nav.subcategories %}
-                      <li>
-                        <a href="{{ subcategory.subhref | absolute_url}}">{{ subcategory.subtitle }}</a>
-                      </li>
-                    {% endfor %}
-                  </ul>
-                </li>
-              {% elsif nav.title == page.title %}
-                <li class="active"><a href="{{ nav.url }}">{{ nav.title }}</a></li>
-              {% else %}
-                <li>
-                  <a href="{{ nav.href | absolute_url}}">{{ nav.title }}</a>
-                </li>
+              {% if nav.mobile_only == nil %}
+                {% if nav.subcategories != null %}
+                  <li>
+                    <a class='dropdown-trigger' href='#' data-target='dropdown-nav-{{ forloop.index }}'>{{ nav.title }}<i class="material-icons right">arrow_drop_down</i></a>
+                    <ul id='dropdown-nav-{{ forloop.index }}' class='dropdown-content'>
+                      {% for subcategory in nav.subcategories %}
+                        <li>
+                          <a href="{{ subcategory.subhref | absolute_url}}">{{ subcategory.subtitle }}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% elsif nav.title == page.title %}
+                  <li class="active"><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+                {% else %}
+                  <li>
+                    <a href="{{ nav.href | absolute_url}}">{{ nav.title }}</a>
+                  </li>
+                {% endif %}
               {% endif %}
             {% endfor %}
           </ul>
@@ -40,7 +45,7 @@
             {% for nav in site.data.nav %}
               {% if nav.subcategories != null %}
                 <li>
-                  <a class='dropdown-trigger' href='#' data-target='dropdown-nav-mobile-{{ forloop.index }}'>{{ nav.title }}<i class="material-icons right">arrow_drop_down</i></a>
+                  <a class='dropdown-trigger-mobile' href='#' data-target='dropdown-nav-mobile-{{ forloop.index }}'>{{ nav.title }}<i class="material-icons right">arrow_drop_down</i></a>
                   <ul id='dropdown-nav-mobile-{{ forloop.index }}' class='dropdown-content'>
                     {% for subcategory in nav.subcategories %}
                     <li>
