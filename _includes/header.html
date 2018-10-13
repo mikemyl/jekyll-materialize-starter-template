@@ -42,6 +42,9 @@
           </ul>
 
           <ul id="nav-mobile" class="sidenav">
+            <div class="background">
+              <img id="logo-img-mobile" width="300px" class="no-margin-bottom" src="{{ "assets/img/logo.png" | absolute_url }}">
+            </div>
             {% for nav in site.data.nav %}
               {% if nav.subcategories != null %}
                 <li>
@@ -49,14 +52,16 @@
                   <ul id='dropdown-nav-mobile-{{ forloop.index }}' class='dropdown-content'>
                     {% for subcategory in nav.subcategories %}
                     <li>
-                      <a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a>
+                      <a href="{{ subcategory.subhref | absolute_url}}">{{ subcategory.subtitle }}</a>
                     </li>
                     {% endfor %}
                   </ul>
                 </li>
+              {% elsif nav.title == page.title %}
+                <li class="active"><a href="{{ nav.url }}">{{ nav.title }}</a></li>
               {% else %}
                 <li>
-                  <a href="{{ site.url }}{{ nav.href }}">{{ nav.title }}</a>
+                  <a href="{{ nav.href | absolute_url}}">{{ nav.title }}</a>
                 </li>
               {% endif %}
             {% endfor %}
