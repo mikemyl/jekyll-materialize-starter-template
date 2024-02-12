@@ -111,9 +111,13 @@ ul.right.hide-on-med-and-down {
 ul.right.hide-on-med-and-down li {
   flex: 1;
   line-height: 1.5; // Adjust this value as needed
-
+  margin-top: 10px;
 }
 
 ul.right.hide-on-med-and-down li a .material-icons {
   display: none;
+}
+
+.slider {
+  margin-top: 70px; // Adjust this value as needed
 }
