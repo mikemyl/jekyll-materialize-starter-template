@@ -99,3 +99,21 @@ h5 {
 .no-bold {
   font-weight: unset;
 }
+
+ul.right.hide-on-med-and-down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; // or space-between, depending on your design
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+ul.right.hide-on-med-and-down li {
+  flex: 1;
+  line-height: 1.5; // Adjust this value as needed
+
+}
+
+ul.right.hide-on-med-and-down li a .material-icons {
+  display: none;
+}
